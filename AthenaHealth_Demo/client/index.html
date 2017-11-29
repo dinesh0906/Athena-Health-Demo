@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="AthenaHealthDemoApp">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Athena Health - Demo</title>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-utils-pagination/dirPagination.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap-css/js/bootstrap.js"></script>
+    <link href="http://ui-grid.info/release/ui-grid-unstable.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="bower_components/angular-ui-grid/ui-grid.css" rel="stylesheet">
+
+    <script src="app.js"></script>
+    <script src="views/js/home.js"></script>
+    <script src="service/service.js"></script>
+
+</head>
+<body ng-controller="IndexController">
+<div class="main" id="body-container">
+    <div class="main-inner">
+        <ng-view></ng-view>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-inner">
+        <div class="container">
+            <div class="row">
+                <div class="span12"> &copy; 2017 <a href="">Athena Health Demo</a> </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
